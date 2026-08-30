@@ -1,1 +1,1 @@
-sudo nmcli connection down UniSydney
+sudo nmcli connection down $1

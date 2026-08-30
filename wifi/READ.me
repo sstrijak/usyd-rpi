@@ -1,0 +1,17 @@
+Full guide available from http://wiki.zde.plus/ZP585
+
+1. Check the card is installed
+$ lspci
+0001:00:00.0 PCI bridge: Broadcom Inc. and subsidiaries BCM2712 PCIe Bridge (rev 30)
+0001:01:00.0 Network controller: Intel Corporation Wi-Fi 6E(802.11ax) AX210/AX1675* 2x2 [Typhoon Peak] (rev 1a)           << This is our card
+0002:00:00.0 PCI bridge: Broadcom Inc. and subsidiaries BCM2712 PCIe Bridge (rev 30)
+0002:01:00.0 Ethernet controller: Raspberry Pi Ltd RP1 PCIe 2.0 South Bridge
+
+2. Update the system and Install kernel header file:
+sudo apt update
+sudo apt install linux-headers-$(uname -r) firmware-iwlwifi flex bison
+
+3. Download backport-iwlwifi
+git clone https://github.com/ZDEdotPlus/iwlwifi.git
+
+
