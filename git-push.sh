@@ -7,7 +7,7 @@ set -e
 # Configuration
 # ==========================================
 SSH_KEY_PATH="$HOME/.ssh/usyd-rpi@github.com" # Path to your private SSH key
-BRANCH_NAME="main"                            # Branch you want to push to
+BRANCH_NAME="master"                            # Branch you want to push to
 REMOTE_NAME="origin"                          # Git remote name
 COMMIT_MSG="${1:-Auto-commit: $(date +'%Y-%m-%d %H:%M:%S')}" # Optional CLI argument
 
